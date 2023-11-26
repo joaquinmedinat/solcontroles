@@ -1,0 +1,311 @@
+---
+title: "Solucionario de Controles"
+format: html
+editor: visual
+jupyter: julia-1.9
+---
+
+## Capítulo 15
+
+### Pregunta 1
+
+De acuerdo a lo discutido en la clase y lo leído en el Capitulo 15 del Ross. ¿Por qué razones las empresas hacen juntas extraordinarias de accionistas ? (marcar solo la incorrecta)
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Con tal de pronunciarse sobre una propuesta de aumento de capital en la empresa.",
+"Toma de decisiones respecto a futuras decisiones de la empresa",
+"Ser parte de votaciones acumulativas o directas en las mismas juntas.",
+"Comprar acciones preferentes con tal de ser dueño de una parte de la compañia. "
+]
+  answ = 4
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+Solo la última es incorrecta porque esa decisión suele ser tomada por la dirección ejectuvia de la empresa.No suele ser una decisión que requiera el voto de los accionistas.
+:::
+
+## Capítulo 20
+
+### Pregunta 1
+
+En la apertura de Osoji, ¿Pudieron colocar todas las acciones?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"No, ya que las AFPs desistieron y los papeles comprados por ellas tuvieron que ser retirados del mercado.",
+"  No, ya que una Normativa de la CMF restringe a ciertos actores a invertir en SpAs ",
+"Si, efectivamente completaron el libro de órdenes."
+]
+  answ = 2
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+La primera es falsa porque no es que la AFPs hayan desistido, es porque no pueden hacerlo por temas de normativa, lo que tambíen hace la tercera incorrecta. Luego, solo la segunda es la correcta.
+:::
+
+## Capítulo 21
+
+### Pregunta K
+
+El leasing operativo que pretende ofrecer Voltera requiere de:
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"un banco como socio ",
+"arriendo de vehículo  ",
+"opción de compra ",
+"todas son correctas"
+]
+  answ = 4
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+es por su modelo de negocio que opera de dos formas: a las app de movilidad les ofrecerá un leasing operativo -plan de arriendo con opción de compra- a través de socio como un banco, en tanto los conductores de taxis y colectivos podrán adquirir el auto directamente.
+
+Luego la última alternativa es correcta.
+:::
+
+## Capítulo 22
+
+### Pregunta 1
+
+¿Qué razones motivan la intervención cambiaria del Banco?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"1. Incertidumbre local ",
+"2. Depreciación del peso Chileno ",
+"3. Generación de distorción en el mercado financiero ",
+"4. Definicion de la talasa politica monetaria",
+"5. inflacion",
+"6. Las alternativas 1,2, y 3 son correctas"
+]
+  answ = 6
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+La 1 es correcta porque esto afecta el tipo de cambio La 2 es correcta porque es el peso chileno puede perder valor desde el punto de vista del tipo de cambio La 3 es correcta porque las distorciónes en el mercado financiero afectan el tipo de cambio La 4 es incorrecta porque la tasa de politica monetaria no afecta el tipo de cambio La 5 es incorrecta porque la inflación corresponde a algo interno del pais, no al tipo de cambio. Luego: la alternativa 6 es la correcta.
+:::
+
+## Capítulo 24
+
+### Pregunta 1
+
+Para definir ausencia de arbitraje decimos que si los retornos son positivos, es decir, 
+ $$ W \cdot \theta \geqslant 0 $$  entonces el costo del portafolio es negativo
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"falso ",
+"verdadero",
+]
+  answ = 1
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+La noción de que un costo es un valor positivo (intuitivamente). Por lo que un costo negativo no es un costo. En efecto es una ganancia.
+
+:::
+
+### Pregunta 2
+
+En el caso de 3 activos y 2 estados de la naturaleza, el resultado de $$ W \cdot \theta$$ es igual a:
+
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"1. Un vector de dimensión 3, donde la primera componente es el costo del portafolio y las dos componentes restantes son los retornos en cada estado",
+"2. Un vector con el promedio ponderado (por el portafolio) de; el valor de los activos, el retorno de los activos en un estado y el retorno de los activos en el otro estado",
+"3.Un vector de dimensión 3, retornos en cada estado",
+"4.Un vector de dimensión 3, donde la primera componente es el costo del portafolio y las dos componentes restantes son los retornos de cada activo ",
+"5. alternativa 1 y 2 correcta"
+]
+  answ = 5
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+La alterantiva 3 es incorrecta porque el vector tambien incluye los costos del portafolio
+
+La alternativa 4 es incorrecta porque el vector es de dimension 3 y si son 3 activos no puede ser de dimension 3 ya que incluye el costo del portafolio
+
+La 1 y 2 son equivalentes y ambas son correctas. Luego la alternativa 5 es correcta.
+
+:::
+
+### Pregunta 3
+
+Cuál de las siguientes razones, NO beneficia la decisión de emitir deuda convertible sobre deuda directa:
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"  Cuando el precio de la acción aumenta después de emitir deuda convertible.",
+"Cuando el precio de la acción disminuye después de emitir deuda convertible o no aumenta lo suficiente.",
+]
+  answ = 1
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+La segunda alternativa si beneficia a la firma de emitir deuda convertible, ya que si el precio de las acciones no aumenta significativamente o disminuye tras la emisión de deuda convertible, los dueños del bono convertible pueden sentirse menos inclinados a convertir su deuda en capital. Como resultado, la empresa podría acabar pagando la deuda al vencimiento, tratando esencialmente la deuda convertible como si fuera deuda tradicional.
+
+Luego, la alternativa 1 es la correcta
+
+
+:::
+
+### Pregunta K
+
+¿Cuál de las siguientes alternativas, es (son) características de los warrants?
+
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+" ",
+" ",
+" "
+]
+  answ = 3
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+-   Esta alternativa no tiene nada que ver por que ...
+
+-   La otra alternativa es incorrecta por ...
+
+-   La alternativa correcta es correcta por ...
+:::
+
+## Capítulo N
+
+### Pregunta K
+
+Esta pregunta requiere responder una de las alternativas siguientes:
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+" ",
+" ",
+" "
+]
+  answ = 3
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+-   Esta alternativa no tiene nada que ver por que ...
+
+-   La otra alternativa es incorrecta por ...
+
+-   La alternativa correcta es correcta por ...
+:::
+
+## Capítulo N
+
+### Pregunta K
+
+Esta pregunta requiere responder una de las alternativas siguientes:
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+" ",
+" ",
+" "
+]
+  answ = 3
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+-   Esta alternativa no tiene nada que ver por que ...
+
+-   La otra alternativa es incorrecta por ...
+
+-   La alternativa correcta es correcta por ...
+:::
+
+## Capítulo N
+
+### Pregunta K
+
+Esta pregunta requiere responder una de las alternativas siguientes:
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+" ",
+" ",
+" "
+]
+  answ = 3
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+-   Esta alternativa no tiene nada que ver por que ...
+
+-   La otra alternativa es incorrecta por ...
+
+-   La alternativa correcta es correcta por ...
+:::
