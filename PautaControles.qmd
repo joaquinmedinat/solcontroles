@@ -189,7 +189,7 @@ La segunda alternativa si beneficia a la firma de emitir deuda convertible, ya q
 Luego, la alternativa 1 es la correcta
 :::
 
-### Pregunta K
+### Pregunta 4
 
 ¿Cuál de las siguientes alternativas, es (son) características de los warrants?
 
@@ -198,9 +198,158 @@ Luego, la alternativa 1 es la correcta
 #| echo: false
 using QuizQuestions
 lh_choices = [
-" ",
-" ",
-" "
+"1. Son títulos que dan a los tenedores el derecho, aunque no la obligación, de vender acciones.",
+"2. Los warrant no especifican el número de acciones que el tenedor puede comprar.",
+"3. Los warrant se parecen a las opciones de compra.",
+"4. Los warrant por lo general, tienen períodos de vencimientos menor a 30 días "
+]
+  answ = 3
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+La 1 es incorrecta porque es comprar, no vender
+La 2 es incorrecta porque si espeficia
+La 4 es incorracta porque en promedio tienen mucho mayor periodo
+Luego la 3 es correcta
+
+
+:::
+
+### Pregunta 5
+
+Desde el punto de vista de los accionistas, la política óptima de redención sería redimir los convertibles cuando el valor de conversión es mayor al precio de redención.
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Verdadero",
+"Falso"
+]
+  answ = 2
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+Es falso porque ellos quieren prevenir la dilución y para eso la politica debe ser al revés
+
+
+:::
+
+## Capítulo 25
+
+### Pregunta 1
+
+Cuál de las siguientes definiciones, concuerda con el de duración.
+
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+" La duración es un promedio del vencimiento de los flujos de efectivo del bono, ponderados con base en el valor presente de cada flujo de efectivo. ",
+"La duración es una desviación estándar del vencimiento de los flujos de efectivo del bono, ponderados con base en el valor presente de cada flujo de efectivo. ",
+"La duración es una suma del vencimiento de los flujos de efectivo del bono, ponderados con base en el valor presente de cada flujo de efectivo.",
+"  La duración es una multiplicación del vencimiento de los flujos de efectivo del bono, ponderados con base en el valor presente de cada flujo de efectivo. ",
+]
+  answ = 1
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+Solo el promedio nos entrega una representacion del tiempo del bono
+:::
+
+
+### Pregunta 2
+
+¿Cuál de las siguientes afirmaciones de los contratos de futuros es verdadera?
+
+I. El vendedor de un contrato de futuros sobre un bono del Tesoro puede decidir efectuar la entrega en cualquier día hábil del mes de entrega,
+
+II. Los contratos de futuro se negocian por lo general en bolsas.
+
+III. Por lo general hay un mercado líquido de contratos de futuros que permite que se puedan liquidar con rapidez.
+
+IV. Los contratos de futuros normalmente dan al vendedor un periodo para entregar
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"I",
+"I,II, y III",
+"I, III, IV",
+"Todas"
+]
+  answ = 4
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+Todas
+I. Esta flexibilidad da al inversor una posibildades de estrategias mas amplias
+II.La negociación en bolsa garantiza la estandarización de la compra y venta
+III.Poder venderlos y comprarlos rapido es una caracteristica de estos activos
+IV. Saber esta flexibilidad es imporante
+
+
+:::
+
+
+### Pregunta 3
+
+¿Qué es el interés abierto en un contrato de futuros?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Es el número de contratos que se encuentran cerrados al final del día. ",
+"Es el número de contratos que se encuentran abiertos al final del día. ",
+"Es el interés que genera el contrato de futuro.",
+"Ninguna de las anteriores."
+]
+  answ = 2
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+La cantidad de contratos abiertos al final del dia es un indicador para determinar el sentimiento del mercado y la fuerza de la tendencia de los precios.
+
+:::
+
+
+## Capítulo 26
+
+
+### Pregunta 1
+
+¿Qué es un depósito en consignación (tipo común de préstamos sobre inventarios, préstamos que usan el inventario como garantía)?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"El prestatario mantiene inventarios en 'depósito' para el prestamista. El producto de la venta del inventario se remite de inmediato al prestamista.",
+"Una garantía general da al prestamista un derecho prendario sobre todos los inventarios del prestatario.",
+"Cuando se recurre al financiamiento mediante almacenes generales de depósito, una empresa pública de almacenamiento supervisa el inventario en nombre del prestamista.",
+"Son depósitos que la compañía mantiene en el banco en cuentas que pagan intereses bajos o ninguno en absoluto."
 ]
   answ = 3
   radioq(lh_choices, answ, keep_order=true)
@@ -209,16 +358,78 @@ lh_choices = [
 ::: {.callout-note collapse="true"}
 #### Pauta
 
--   Esta alternativa no tiene nada que ver por que ...
+La ultima la alternativa no es la correcta porque esto no tiene relación con cuentas bancarias
 
--   La otra alternativa es incorrecta por ...
+La segunda y tercera son otros tipos de prestamos de inventario.
 
--   La alternativa correcta es correcta por ...
+La primera es la correcta. El documento donde se hace constar el 
+préstamo se llama depósito en consignación.
+
 :::
 
-## Capítulo N
 
-### Pregunta K
+## Capítulo 27
+
+
+### Pregunta 1
+
+Usted tiene una partida de transito de 291 por 17 días. Suponiendo que el mes tiene 31 días. ¿Cuál es el promedio diario de las partidas en tránsito? (Respuesta no debe dar con decimales)
+
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+" 17",
+"120",
+"160"
+]
+  answ = 3
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+Es $$   \frac{291 \cdot 17}{31} = 160 $$
+
+:::
+
+
+## Capítulo 28
+
+### Pregunta 1
+
+¿Por qué el regulador interviene el mercado de asesoría previsional? Elija sólo la principal
+
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Para prevenir que las personas tomen decisiones libremente dentro de alternativas más riesgosas",
+"Para prevenir que las personas tomen decisiones libremente dentro de alternativas que provoquen pérdidas en promedio",
+"Para limitar la volatilidad y costos en los que incurren las AFP"
+]
+  answ = 2
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+La primera es incorrecta porque no lo hace para disminuir la libertad personas en relación a las alterntivas mas riesgosas.
+La tercera es cierta, pero no es la principal ya que es la segunda: evitar que las personas incurran en pérdidas, es decir, proteger las personas.
+
+:::
+
+
+
+
+## Capítulo 31
+
+### Pregunta 1
 
 Esta pregunta requiere responder una de las alternativas siguientes:
 
@@ -227,78 +438,19 @@ Esta pregunta requiere responder una de las alternativas siguientes:
 #| echo: false
 using QuizQuestions
 lh_choices = [
-" ",
-" ",
-" "
+"tipo de cambio",
+"inflacion"
 ]
-  answ = 3
+  answ = 1
   radioq(lh_choices, answ, keep_order=true)
 ```
 
 ::: {.callout-note collapse="true"}
 #### Pauta
 
--   Esta alternativa no tiene nada que ver por que ...
-
--   La otra alternativa es incorrecta por ...
-
--   La alternativa correcta es correcta por ...
-:::
-
-## Capítulo N
-
-### Pregunta K
-
-Esta pregunta requiere responder una de las alternativas siguientes:
-
-```{julia}
-#| hold: true
-#| echo: false
-using QuizQuestions
-lh_choices = [
-" ",
-" ",
-" "
-]
-  answ = 3
-  radioq(lh_choices, answ, keep_order=true)
-```
-
-::: {.callout-note collapse="true"}
-#### Pauta
-
--   Esta alternativa no tiene nada que ver por que ...
-
--   La otra alternativa es incorrecta por ...
-
--   La alternativa correcta es correcta por ...
-:::
-
-## Capítulo N
-
-### Pregunta K
-
-Esta pregunta requiere responder una de las alternativas siguientes:
-
-```{julia}
-#| hold: true
-#| echo: false
-using QuizQuestions
-lh_choices = [
-" ",
-" ",
-" "
-]
-  answ = 3
-  radioq(lh_choices, answ, keep_order=true)
-```
-
-::: {.callout-note collapse="true"}
-#### Pauta
-
--   Esta alternativa no tiene nada que ver por que ...
-
--   La otra alternativa es incorrecta por ...
-hi- test
+El término cubierto se refiere al hecho de que el inversionista está cubierto en caso de que se produzca  una variación del tipo de cambio porque el tipo de cambio a plazo se asegura desde hoy.
 
 :::
+
+
+
