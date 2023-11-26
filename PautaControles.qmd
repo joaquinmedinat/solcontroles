@@ -116,8 +116,7 @@ La 1 es correcta porque esto afecta el tipo de cambio La 2 es correcta porque es
 
 ### Pregunta 1
 
-Para definir ausencia de arbitraje decimos que si los retornos son positivos, es decir, 
- $$ W \cdot \theta \geqslant 0 $$  entonces el costo del portafolio es negativo
+Para definir ausencia de arbitraje decimos que si los retornos son positivos, es decir, $$ W \cdot \theta \geqslant 0 $$ entonces el costo del portafolio es negativo
 
 ```{julia}
 #| hold: true
@@ -135,13 +134,11 @@ lh_choices = [
 #### Pauta
 
 La noción de que un costo es un valor positivo (intuitivamente). Por lo que un costo negativo no es un costo. En efecto es una ganancia.
-
 :::
 
 ### Pregunta 2
 
 En el caso de 3 activos y 2 estados de la naturaleza, el resultado de $$ W \cdot \theta$$ es igual a:
-
 
 ```{julia}
 #| hold: true
@@ -166,7 +163,6 @@ La alterantiva 3 es incorrecta porque el vector tambien incluye los costos del p
 La alternativa 4 es incorrecta porque el vector es de dimension 3 y si son 3 activos no puede ser de dimension 3 ya que incluye el costo del portafolio
 
 La 1 y 2 son equivalentes y ambas son correctas. Luego la alternativa 5 es correcta.
-
 :::
 
 ### Pregunta 3
@@ -191,15 +187,12 @@ lh_choices = [
 La segunda alternativa si beneficia a la firma de emitir deuda convertible, ya que si el precio de las acciones no aumenta significativamente o disminuye tras la emisión de deuda convertible, los dueños del bono convertible pueden sentirse menos inclinados a convertir su deuda en capital. Como resultado, la empresa podría acabar pagando la deuda al vencimiento, tratando esencialmente la deuda convertible como si fuera deuda tradicional.
 
 Luego, la alternativa 1 es la correcta
-
-
 :::
 
 ### Pregunta K
 
 ¿Cuál de las siguientes alternativas, es (son) características de los warrants?
 
-
 ```{julia}
 #| hold: true
 #| echo: false
@@ -306,6 +299,6 @@ lh_choices = [
 -   Esta alternativa no tiene nada que ver por que ...
 
 -   La otra alternativa es incorrecta por ...
+hi- test
 
--   La alternativa correcta es correcta por ...
 :::
